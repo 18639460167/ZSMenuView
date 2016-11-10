@@ -15,6 +15,7 @@
 		A97D52F11DD4204E00D9F2D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97D52EF1DD4204E00D9F2D6 /* LaunchScreen.storyboard */; };
 		A97D52FC1DD4204E00D9F2D6 /* ZSMenuViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D52FB1DD4204E00D9F2D6 /* ZSMenuViewTests.m */; };
 		A97D53071DD4204E00D9F2D6 /* ZSMenuViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D53061DD4204E00D9F2D6 /* ZSMenuViewUITests.m */; };
+		A97D53161DD4206100D9F2D6 /* ZSMenuList.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D53151DD4206100D9F2D6 /* ZSMenuList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A97D53021DD4204E00D9F2D6 /* ZSMenuViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSMenuViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97D53061DD4204E00D9F2D6 /* ZSMenuViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSMenuViewUITests.m; sourceTree = "<group>"; };
 		A97D53081DD4204E00D9F2D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97D53141DD4206100D9F2D6 /* ZSMenuList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMenuList.h; sourceTree = "<group>"; };
+		A97D53151DD4206100D9F2D6 /* ZSMenuList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMenuList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		A97D52E01DD4204E00D9F2D6 /* ZSMenuView */ = {
 			isa = PBXGroup;
 			children = (
+				A97D53171DD4206700D9F2D6 /* menuView */,
 				A97D52E41DD4204E00D9F2D6 /* AppDelegate.h */,
 				A97D52E51DD4204E00D9F2D6 /* AppDelegate.m */,
 				A97D52E71DD4204E00D9F2D6 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				A97D53081DD4204E00D9F2D6 /* Info.plist */,
 			);
 			path = ZSMenuViewUITests;
+			sourceTree = "<group>";
+		};
+		A97D53171DD4206700D9F2D6 /* menuView */ = {
+			isa = PBXGroup;
+			children = (
+				A97D53141DD4206100D9F2D6 /* ZSMenuList.h */,
+				A97D53151DD4206100D9F2D6 /* ZSMenuList.m */,
+			);
+			name = menuView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A97D52E91DD4204E00D9F2D6 /* ViewController.m in Sources */,
+				A97D53161DD4206100D9F2D6 /* ZSMenuList.m in Sources */,
 				A97D52E61DD4204E00D9F2D6 /* AppDelegate.m in Sources */,
 				A97D52E31DD4204E00D9F2D6 /* main.m in Sources */,
 			);
@@ -414,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZSMenuView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZSCreate.ZSMenuView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZSMenuView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZSCreate.ZSMenuView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

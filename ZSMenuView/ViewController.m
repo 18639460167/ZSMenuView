@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZSMenuList.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *button = [UIButton buttonWithType:0];
+    button.backgroundColor = [UIColor orangeColor];
+    button.frame = CGRectMake(50, 50, 60, 60);
+    [button addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)btnAction
+{
+    [ZSMenuList createMenuView:@[@"select",@"select",@"select",@"select",@"select",@"select",@"select"] title:@[@"你好啊",@"你好啊",@"你好啊",@"你好啊",@"你好啊",@"你好啊",@"你好啊"] selIndex:^(NSInteger index) {
+        NSLog(@"%ld",(long)index);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
