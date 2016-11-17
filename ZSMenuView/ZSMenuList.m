@@ -49,7 +49,19 @@
  */
 - (void)btnAction
 {
-    self.menuAction(0);
+    [UIView animateWithDuration:0.1 animations:^{
+        self.transform=CGAffineTransformMakeScale(0.9, 0.9);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.1 animations:^{
+            self.transform=CGAffineTransformMakeScale(1.1, 1.1);
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.1 animations:^{
+                self.transform = CGAffineTransformMakeScale(1.0, 1.0);
+            } completion:^(BOOL finished) {
+                self.menuAction(0);
+            }];
+        }];
+    }];
 }
 
 @end

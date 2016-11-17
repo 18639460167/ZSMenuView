@@ -19,6 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
+    UIImageView *image = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    image.image = [UIImage imageNamed:@"h6"];
+    [self.view addSubview:image];
     
     UIButton *button = [UIButton buttonWithType:0];
     button.backgroundColor = [UIColor orangeColor];
