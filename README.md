@@ -1,5 +1,5 @@
 # ZSMenuView
-一个类似于钉钉的动态弹窗，一键集成，后续会持续更新。/n
+一个类似于钉钉的动态弹窗，一键集成，后续会持续更新。
 
 eg:
  [ZSMenuList createMenuView:@[@"select",@"select",@"select",@"select",@"select",@"select",@"select"] 
